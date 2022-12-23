@@ -9,9 +9,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
-// app.use("/", (req,res)=>{
-//     res.send("Server started")
-// })
+app.use("/", (req,res)=>{
+    res.send("Server started")
+})
 
 app.get("/fetch-user", async (req, res) => {
   https
